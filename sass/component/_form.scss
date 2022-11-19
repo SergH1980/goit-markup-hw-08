@@ -1,0 +1,164 @@
+.modal__form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.modal__windows {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.form__label {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+.form__field {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  padding-left: 50px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form__input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.form__textarea {
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.confirmation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.confirm__text {
+  display: flex;
+  align-items: center;
+}
+
+.confirm__custom {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 3px;
+
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .confirm__check:checked + .confirm__text & {
+    background-color: var(--accent-color);
+    border-color: transparent;
+    fill: var(--primary-bg-color);
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+  }
+  .confirm__check:focus + .confirm__text & {
+    border-color: var(--accent-color);
+  }
+}
+
+.license-agreement {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--accent-color);
+}
+
+.license__agreement {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--accent-color);
+}
+
+.modal__button {
+  width: 200px;
+  height: 50px;
+  padding: 0;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-bg-color);
+}

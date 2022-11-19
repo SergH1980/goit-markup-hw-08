@@ -1,0 +1,33 @@
+.address__link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__item {
+  display: inline-block;
+
+  text-decoration: none;
+
+  line-height: 1.71;
+}
+
+.address__postal {
+  color: var(--primary-bg-color);
+}
+
+.address__other {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--primary-transition);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address-postal {
+  color: var(--primary-bg-color);
+}
+
+.contact-footer {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--primary-transition);
+}

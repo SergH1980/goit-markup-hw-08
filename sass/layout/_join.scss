@@ -1,0 +1,27 @@
+.join {
+  width: 206px;
+  height: 80px;
+}
+
+.join__title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+
+  margin-bottom: 20px;
+}
+
+.social__join {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  color: var(--primary-bg-color);
+
+  transition: background-color var(--primary-transition);
+
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+  }
+}
