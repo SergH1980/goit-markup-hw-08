@@ -737,6 +737,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__general {
     justify-content: left;
+    gap: 0;
   }
 }
 
@@ -779,6 +780,12 @@ body {
   line-height: 1.71;
 }
 
+@media screen and (min-width: 1200px) {
+  .address__list {
+    width: 231px;
+  }
+}
+
 .address__postal {
   color: var(--primary-bg-color);
 }
@@ -789,10 +796,6 @@ body {
 }
 .address__other:hover, .address__other:focus {
   color: var(--accent-color);
-}
-
-.address-postal {
-  color: var(--primary-bg-color);
 }
 
 .contact-footer {
@@ -831,6 +834,20 @@ body {
     width: 450px;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .follow {
+    width: 570px;
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .follow__form {
+    gap: 12px;
+    width: 570px;
+    text-align: left;
+  }
+}
 
 .follow__text {
   font-weight: 700;
@@ -845,9 +862,11 @@ body {
 .follow__wrap {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .follow__wrap {
+    gap: 12px;
+  }
 }
 
 .follow__field {
@@ -880,6 +899,12 @@ body {
 @media screen and (min-width: 768px) {
   .follow__field {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .follow__field {
+    width: 358px;
+    margin: 0;
   }
 }
 

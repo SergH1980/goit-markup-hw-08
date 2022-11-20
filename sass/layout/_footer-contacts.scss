@@ -10,6 +10,12 @@
   line-height: 1.71;
 }
 
+.address__list {
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+  }
+}
+
 .address__postal {
   color: var(--primary-bg-color);
 }
@@ -21,10 +27,6 @@
   &:focus {
     color: var(--accent-color);
   }
-}
-
-.address-postal {
-  color: var(--primary-bg-color);
 }
 
 .contact-footer {
