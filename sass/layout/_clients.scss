@@ -1,12 +1,20 @@
 .client__list {
   display: flex;
   gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
 
   justify-content: center;
 }
 
 .client__card {
-  min-width: calc((100% - 150px) / 6);
+  min-width: calc((100% - 30px) / 2);
+  @media screen and (min-width: 768px) {
+    min-width: calc((100% - 60px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: calc((100% - 150px) / 6);
+  }
 }
 
 .client__link {

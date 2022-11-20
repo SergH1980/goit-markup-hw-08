@@ -7,15 +7,40 @@
 
 .footer__general {
   display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
   align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    justify-content: left;
+  }
 }
 
 .footer__contact {
-  margin-right: 70px;
-  width: 231px;
 }
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
   color: var(--primary-bg-color);
+}
+
+.footer__tablet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  text-align: center;
+  justify-content: center;
+  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 165px;
+    flex-wrap: nowrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 70px;
+    text-align: left;
+  }
 }

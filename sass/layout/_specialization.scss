@@ -1,7 +1,15 @@
+.pic-mask {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .pic-mask__list {
   display: flex;
   gap: 30px;
-  width: calc((100% - 60px) / 3);
+  // width: calc((100% - 60px) / 3);
+  width: 100%;
 }
 
 .pic-mask__card {
