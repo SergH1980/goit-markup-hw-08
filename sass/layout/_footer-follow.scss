@@ -1,8 +1,8 @@
 .follow {
   width: 100%;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 450px;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       width: 570px;
       margin-left: 93px;
     }
@@ -10,7 +10,7 @@
 }
 
 .follow__form {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     gap: 12px;
     width: 570px;
     text-align: left;
@@ -33,7 +33,7 @@
 .follow__wrap {
   display: flex;
   flex-wrap: wrap;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     gap: 12px;
   }
 }
@@ -58,10 +58,10 @@
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 450px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 358px;
     margin: 0;
   }
@@ -76,12 +76,12 @@
 
   width: 200px;
   height: 50px;
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  // padding-left: 28px;
-  background-color: var(--accent-color);
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 31px;
 
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;

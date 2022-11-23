@@ -11,7 +11,7 @@
 }
 
 .address__list {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 231px;
   }
 }

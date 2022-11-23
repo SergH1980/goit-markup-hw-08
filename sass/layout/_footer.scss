@@ -13,14 +13,12 @@
   justify-content: center;
   text-align: center;
   align-items: baseline;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     justify-content: left;
     gap: 0;
   }
 }
 
-.footer__contact {
-}
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -34,12 +32,12 @@
   text-align: center;
   justify-content: center;
   align-items: baseline;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     gap: 165px;
     flex-wrap: nowrap;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     gap: 70px;
     text-align: left;

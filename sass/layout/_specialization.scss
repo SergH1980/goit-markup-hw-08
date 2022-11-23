@@ -1,6 +1,6 @@
 .pic-mask {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: block;
   }
 }

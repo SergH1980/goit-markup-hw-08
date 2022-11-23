@@ -13,6 +13,14 @@
   line-height: 1.15;
   text-align: center;
   color: var(--title-text-color);
+  @include smartphone {
+    width: 370px;
+    height: 60px;
+    @include desktop {
+      width: 448px;
+      height: 23px;
+    }
+  }
 }
 
 .modal__windows {
@@ -100,6 +108,12 @@
 .confirm__text {
   display: flex;
   align-items: center;
+  font-size: 12px;
+  line-height: 1.16;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .confirm__custom {
@@ -131,18 +145,14 @@
   }
 }
 
-.license-agreement {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--accent-color);
-}
-
 .license__agreement {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--accent-color);
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__button {

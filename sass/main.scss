@@ -1,7 +1,7 @@
 @import "./utils/vars";
 @import "./utils/hidden";
 @import "./utils/backdrop-hidden";
-
+@import "./utils/mixin";
 @import "./base/reset";
 @import "./base/body";
 
@@ -23,7 +23,7 @@
 @import "./layout/clients";
 @import "./layout/footer";
 @import "./layout/footer-contacts";
-@import "./layout/footer-join";
+@import "./layout/footer-subscribe";
 @import "./layout/footer-follow";
 
 @import "./pages/portfolio/portfolio-filter";
