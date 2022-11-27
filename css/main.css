@@ -562,6 +562,7 @@ body.menu-open {
 .header__button {
   width: 40px;
   height: 40px;
+  padding: 0;
   border: none;
   background-color: transparent;
   justify-content: center;
@@ -629,6 +630,12 @@ body.menu-open {
   .reach__phone {
     font-size: 34px;
   }
+}
+
+.mob__icon {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .reach__email {
@@ -828,6 +835,7 @@ body.menu-open {
 
 .pic-mask {
   display: none;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .pic-mask {
@@ -838,7 +846,7 @@ body.menu-open {
 .pic-mask__list {
   display: flex;
   gap: 30px;
-  width: 100%;
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .pic-mask__card {
