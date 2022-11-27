@@ -521,6 +521,12 @@ body.menu-open {
 @media screen and (min-width: 768px) {
   .contact__link {
     padding: 0;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
   }
 }
 
@@ -554,8 +560,8 @@ body.menu-open {
 }
 
 .header__button {
-  display: flex;
-  margin-left: auto;
+  width: 40px;
+  height: 40px;
   border: none;
   background-color: transparent;
   justify-content: center;
@@ -571,11 +577,6 @@ body.menu-open {
   .header__button {
     display: none;
   }
-}
-
-.mob__icon {
-  width: 40px;
-  height: 40px;
 }
 
 .mob__soc {
@@ -670,13 +671,13 @@ body.menu-open {
 .hero {
   max-width: 480px;
   height: 400px;
+  background: #c4c4c4;
+  background-image: var(--hero-gradient), url(../images/hero/hero-smartphone.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
-  background: #c4c4c4;
-  background-image: var(--hero-gradient), url(../images/hero/hero-smartphone.jpg);
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -814,6 +815,11 @@ body.menu-open {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .icon-card__title {
+    text-align: left;
+  }
 }
 
 .icon-card__text {

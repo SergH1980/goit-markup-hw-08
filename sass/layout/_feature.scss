@@ -49,6 +49,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .icon-card__text {
